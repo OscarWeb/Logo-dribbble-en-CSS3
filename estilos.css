@@ -1,0 +1,185 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*************************************************/
+/*************************************************/
+/*************************************************/
+body{
+	background: #f0f0f0 url('bg.gif') repeat;
+	text-align: center;
+}
+#dribbble{
+	width: 100%;
+	height: 46px;
+	background: url('bg-head.png') repeat;
+	border-bottom: #ffffff;
+	padding-top: 13px;
+}
+#logo{
+	display: block;
+	width: 100px;
+	height: 29px;
+	background: url(dribbble-tm.png?1) no-repeat 0 0;
+	margin: auto;
+}
+#pie{
+	position: fixed;
+	width: 200px;
+	bottom: 0;
+	right: 12px;
+	padding-bottom: 10px;
+	text-align: right;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 12px;
+	color: #bbbbbb;
+	text-shadow: 0 1px 0 #ffffff;
+}
+#pie a{
+	text-decoration: none;
+	color: #bbbbbb;
+}
+#pie a:hover{
+	color: #202020;
+}
+/* logo dribbble en CSS3 *******************************/
+#contenedor{
+	display: block;
+	position: absolute;
+	-moz-transition-duration: .2s;
+	-webkit-transition-duration: .2s;
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: 40px;
+	cursor: pointer;
+}
+#contenedor:hover{
+	-moz-transform: scale(1.2,1.2);
+	-webkit-transform: scale(1.2,1.2);
+}
+#circulo{
+	display: block;
+	width: 200px;
+	height: 200px;	
+	border: 12px solid #c3396d;
+	border-radius: 110px;
+	background: #f16097;
+	margin: auto;
+	z-index: 10;
+}
+#reflejo{
+	display: block;
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	-moz-transform: rotate(35deg) skew(-25deg);
+	-webkit-transform: rotate(35deg) skew(-25deg);
+	border-radius: 300px 250px ;
+	background: #f692b8;
+	margin-top: -215px;
+	margin-left: 88px;
+	z-index: 20;
+}
+#linea_centro{
+	display: block;
+	position: absolute;
+	width: 98px;
+	height: 98px;
+	-moz-transform: rotate(-82deg) skew(-40deg);
+	-webkit-transform: rotate(-82deg) skew(-40deg);
+	border-right: 14px solid #c3396d;
+	border-bottom: 14px solid #c3396d;
+	border-radius: 0 30px 300px 30px;
+	margin-top: -166px;
+	margin-left: 90px;
+	z-index: 30;
+}
+#linea_alta{
+	display: block;
+	position: absolute;
+	width: 92px;
+	height: 92px;
+	-moz-transform: rotate(15deg) skew(-34deg);
+	-webkit-transform: rotate(15deg) skew(-34deg);
+	border-right: 14px solid #c3396d;
+	border-bottom: 14px solid #c3396d;
+	border-radius: 0 0 200px 10px;
+	margin-top: -205px;
+	margin-left: 83px;
+	z-index: 40;
+}
+#linea_baja{
+	display: block;
+	position: absolute;
+	width: 135px;
+	height: 135px;
+	-moz-transform: rotate(205deg) skew(2deg);
+	-webkit-transform: rotate(205deg) skew(2deg);
+	border-right: 12px solid #c3396d;
+	border-bottom: 12px solid #c3396d;
+	border-radius: 0 0 190px 0;
+	margin-top: -142px;
+	margin-left: 92px;
+	z-index: 50;
+}
+#sombra{
+	display: block;
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	-moz-transform: rotate(18deg) skew(-70deg);
+	-webkit-transform: rotate(18deg) skew(-70deg);
+	border-radius: 200px 200px ;
+	background: rgba(204,204,204,0.4);
+	margin-left: 120px;
+	margin-top: -14px;
+	z-index: 60;
+}
